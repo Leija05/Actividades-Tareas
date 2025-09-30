@@ -1,0 +1,21 @@
+.contenedor-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 700px;
+            margin: 40px auto;
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .item {
+            background: #722acb;
+            color: #fff;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 40px 0;
+            border-radius: 8px;
+        }
+        .item:hover {
+            background: #5a22a3;
+        }

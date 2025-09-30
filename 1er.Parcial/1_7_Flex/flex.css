@@ -1,0 +1,28 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #a8acce;
+            margin: 0;
+            padding: 20px;
+        }
+        .contenedor-flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+        .item {
+            background: #0078d7;
+            color: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .item:hover {
+            background: #005a9e;
+        }
