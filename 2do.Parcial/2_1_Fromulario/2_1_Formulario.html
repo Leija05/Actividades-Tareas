@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulario Funcional</title>
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
-    <form class="formulario" action="">
+    <form class="formulario" id="miFormulario">
         <div class="campo">
             <label for="nombre" class="etiqueta">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" class="input">
+            <input type="text" id="nombre" name="nombre" class="input" required>
         </div>
         <div class="campo">
             <label for="email" class="etiqueta">Correo electrónico:</label>
-            <input type="email" id="email" name="email" class="input">
+            <input type="email" id="email" name="email" class="input" required>
         </div>
         <div class="campo">
             <label for="mensaje" class="etiqueta">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" class="input"></textarea>
+            <textarea id="mensaje" name="mensaje" class="input" required></textarea>
         </div>
         <button type="submit" class="boton">Enviar</button>
+        <div id="resultado"></div>
     </form>
+    <script src="Java.js"></script>
 </body>
-<script src="Java.js"></script>
 </html>
