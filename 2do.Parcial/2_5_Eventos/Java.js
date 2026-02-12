@@ -1,15 +1,20 @@
+const imagenPrincipal = document.getElementById("imagen");
+const imagenes = ["imagenes/cesar.jpg", "imagenes/PerroChido.png"];
+let indice = 0;
 
-    const imagenPrincipal = document.getElementById("imagen");
-    const imagenes =["imagenes/cesar.jpg","imagenes/PerroChido.png"];
-    let indice = 0;
-
-    imagenPrincipal.addEventListener("click", () => {
-        imagenPrincipal.classList.add("cambiando");
+imagenPrincipal.addEventListener("click", () => {
+    imagenPrincipal.classList.add("cambiando");
+    setTimeout(() => {
+        indice = (indice + 1) % imagenes.length;
+        imagenPrincipal.src = imagenes[indice];
         setTimeout(() => {
-            indice = (indice + 1) % imagenes.length
-            imagenPrincipal.src = imagenes[indice];
-            setTimeout(() => {
-                imagenPrincipal.classList.remove("cambiando");
-            }, 100);
-        }, 300);
-    });
+            imagenPrincipal.classList.remove("cambiando");
+        }, 100);
+    }, 300);
+});
+
+const botonModo = document.getElementById("modoBtn");
+
+botonModo.addEventListener("click", () => {
+    document.body.classList.toggle("tema-bn");
+});
